@@ -1,12 +1,13 @@
 import * as express from 'express';
-import * as morgan from 'morgan';
+
+const morgan = require('morgan');
 
 import {WelcomeController} from './routes/welcome';
 
 const app: express.Application = express();
 const port: any = process.env.PORT || 3000;
 
-const morgan_middle: morgan.Morgan = morgan('combined')
+const morgan_middle: any = morgan('combined')
 
 app.use(morgan_middle);
 
