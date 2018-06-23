@@ -11,7 +11,7 @@
     "@types/morgan": "^1.7.35",
     "@types/node": "10.3.5",
     "express": "git://github.com/ProtonLab/express.git",
-    "mocha": "^5.2.0",
+    "mocha": "git://github.com/ProtonLab/mocha.git",
     "morgan": "^1.9.0",
     "nyc": "^12.0.2",
     "typescript": "2.9.2"
