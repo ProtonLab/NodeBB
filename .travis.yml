@@ -5,14 +5,8 @@ os:
   - osx
 
 env:
-  - NODE_ENV=production
-    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
-  - NODE_ENV=production
-    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
-  - NODE_ENV=development
-    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
-  - NODE_ENV=development
-    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
+  - NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
+  - NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
 
 node_js:
   - "10"
@@ -25,8 +19,7 @@ matrix:
   allow_failures:
     - node_js: "iojs"
     - env:
-      - NODE_ENV=production NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
-      - NODE_ENV=development NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
+      - NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
 
 before_install:
   - "curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.7.0"
