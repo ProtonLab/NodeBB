@@ -12,8 +12,10 @@
     "typescript": "2.9.2"
   },
   "scripts": {
-    "build": "tsc",
-    "rm-build": "rm -r -f -- **/*.ts && rm -r -f -- *.ts",
+    "rm-dist": "rm -r -f -- dist/*",
+    "move-dist": "mv dist/* src && yarn run rm-dist",
+    "build": "tsc && yarn run move-dist",
+    "rm-build": "rm -r -f -- **/*.jss && rm -r -f -- *.js",
     "start": "yarn run build && node src/main.js && yarn run rm-build"
   }
 }
