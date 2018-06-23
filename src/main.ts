@@ -6,9 +6,9 @@ import {WelcomeController} from './routes/welcome';
 const app: express.Application = express();
 const port: any = process.env.PORT || 3000;
 
-const morgan: morgan.Morgan = morgan('combined')
+const morgan_middle: morgan.Morgan = morgan('combined')
 
-app.use(morgan);
+app.use(morgan_middle);
 
 app.use('/welcome', WelcomeController);
 
