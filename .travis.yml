@@ -6,9 +6,13 @@ os:
 
 env:
   - NODE_ENV=production
+    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
+  - NODE_ENV=production
+    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
   - NODE_ENV=development
-  - NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
-  - NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
+    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
+  - NODE_ENV=development
+    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
 
 node_js:
   - "10"
