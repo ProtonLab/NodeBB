@@ -10,6 +10,7 @@
     "@types/express": "^4.16.0",
     "@types/morgan": "^1.7.35",
     "@types/node": "10.3.5",
+    "codecov": "^3.0.2",
     "express": "git://github.com/ProtonLab/express.git",
     "mocha": "git://github.com/ProtonLab/mocha.git",
     "morgan": "^1.9.0",
