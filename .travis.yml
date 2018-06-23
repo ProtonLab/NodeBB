@@ -4,6 +4,10 @@ os:
   - linux
   - osx
 
+env:
+  - NODE_ENV=production
+  - NODE_ENV=development
+
 node_js:
   - "10"
   - "8"
