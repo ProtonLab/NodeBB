@@ -1,4 +1,5 @@
 # NodeBB
+![Travis](https://img.shields.io/travis/ProtonLab/NodeBB.svg?style=flat-square)
 ## License
     NodeBB
     Copyright (C) 2018 MagicMarvMan
