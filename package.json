@@ -7,7 +7,7 @@
   "private": false,
   "dependencies": {
     "@protonlab/express": "4.16.4",
-    "@protonlab/mocha": "5.2.1",
+    "@protonlab/mocha": "5.2.2",
     "@types/chai": "^4.1.4",
     "@types/es6-shim": "0.31.37",
     "@types/express": "4.16.0",
