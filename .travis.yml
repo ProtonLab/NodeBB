@@ -20,6 +20,7 @@ matrix:
     - node_js: "iojs"
       env: NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
     - env: NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly
+    - node_js: "iojs"
 
 before_install:
   - "curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.7.0"
