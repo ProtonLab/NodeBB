@@ -9,5 +9,10 @@
   "dependencies": {
     "express": "git://github.com/ProtonLab/express.git",
     "typescript": "2.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "rm-build": "rm -r -f -- **/*.ts && rm -r -f -- *.ts",
+    "start": "yarn run build && node src/main.js && yarn run rm-build"
   }
 }
