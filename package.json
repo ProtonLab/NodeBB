@@ -21,6 +21,7 @@
     "build": "mkdir -p dist && rm -r dist && yarn run tsc",
     "start": "yarn run build && node dist/main.js",
     "setup": "yarn install",
-    "test": "yarn run build && nyc mocha"
+    "test": "yarn run build && nyc mocha",
+    "posttest": "nyc report --reporter=json && codecov -f coverage/*.json"
   }
 }
