@@ -15,4 +15,15 @@ describe('Math', function() {
       assert.equal(math.add(2, 2), 4);
     });
   });
+  describe('#sub(a, b)', function() {
+    it('should return 0 when giving 0 and 0 as arguments', function() {
+      assert.equal(math.subtract(0, 0), 0);
+    });
+    it('should return 0 when giving 1 and 1 as arguments', function() {
+      assert.equal(math.subtract(1, 1), 0);
+    });
+    it('should return -1 when giving 0 and 1 as arguments', function() {
+      assert.equal(math.subtract(0, 1), -1);
+    });
+  });
 });
