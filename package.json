@@ -1,7 +1,7 @@
 {
   "name": "NodeBB",
   "version": "1.0.0",
-  "main": "src/main.js",
+  "main": "src/main.js.o",
   "repository": "https://github.com/ProtonLab/NodeBB.git",
   "author": "MagicMarvMan <24806960+MagicMarvMan@users.noreply.github.com>",
   "license": "AGPL-3.0-or-later",
@@ -14,8 +14,9 @@
   "scripts": {
     "rm-dist": "rm -r -f -- dist/*",
     "move-dist": "mv dist/* src && yarn run rm-dist",
-    "build": "tsc && yarn run move-dist",
+    "mv-out": "for filename in src/*.js; do mv \"$filename\" \"$filename.o\"; done;",
+    "build": "tsc && yarn run move-dist && yarn run mv-out",
     "rm-build": "rm -r -f -- **/*.jss && rm -r -f -- *.js",
-    "start": "yarn run build && node src/main.js && yarn run rm-build"
+    "start": "yarn run build && node src/main.js.o && yarn run rm-build"
   }
 }
